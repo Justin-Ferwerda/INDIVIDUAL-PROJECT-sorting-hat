@@ -9,3 +9,10 @@
   font-family: HarryPotter;
   src: url(HARRYP__.TTF);
 }
+
+body {
+  display: flex;
+  background-image: url('/assets/images/imgbin_harry-potter-hogwarts-gryffindor-slytherin-house-png.png');
+  justify-content: center;
+  background-size: cover;
+}
