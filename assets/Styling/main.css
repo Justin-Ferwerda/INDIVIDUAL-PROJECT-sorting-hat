@@ -1,0 +1,11 @@
+#welcome-text {
+  display: flex;
+  justify-content: center;
+  font-family: HarryPotter;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: HarryPotter;
+  src: url(HARRYP__.TTF);
+}
