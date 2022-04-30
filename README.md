@@ -50,3 +50,4 @@ Think of a way you can expel students without just hiding those divs on the page
 - House Colors: The color of the student's card changes depending on which house they were sorted.
 - Card Sorting/Ordering: Sort the student cards by some criteria (i.e. alphabetically by name, by house)
 
+<iframe width="560" height="315" src='https://dbdiagram.io/embed/626d4e0295e7f23c61a1b44a'> </iframe>
