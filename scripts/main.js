@@ -39,19 +39,22 @@ const eventListeners = () => {
     };
 
     students.push(newStudent);
+    cardsOnDom(students);
     console.log(students);
     form.reset();
 
   });
+
+}
 //filterbuttons
 
 //expel student function
 
-}
+
 
 
 
     addForm()
     addButtons()
-    cardsOnDom()
+    cardsOnDom(students)
     eventListeners()

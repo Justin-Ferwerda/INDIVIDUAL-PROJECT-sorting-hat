@@ -5,7 +5,7 @@ import renderToDom from "../Utils/renderToDom.js";
 const addForm = () => {
   const domString = `<div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Please enter your name!</label>
-  <input type="email" class="form-control" id="name" placeholder="First name Last name">
+  <input type="student-name" class="form-control" id="name" placeholder="First name Last name">
   <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">Submit</button>
   </div>
