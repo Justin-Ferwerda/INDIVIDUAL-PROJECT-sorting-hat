@@ -65,3 +65,7 @@ a {
   background-color: black;
   color: white;
 }
+
+img[alt="death-eater"] {
+  background-color: black;
+}

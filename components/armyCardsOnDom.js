@@ -9,11 +9,11 @@ const armyCardsOnDom = (array) => {
     
 
     domString += `<div class="card" style="width: 18rem;">
-    <img src="${studentObj[0].imgSource}" class="card-img-top" alt="...">
+    <img src="assets/images/deathEaterimg.webp" class="card-img-top" alt="death-eater">
     <div class="card-body">
-      <h5 class="card-title">${studentObj[0].name}  - ${studentObj[0].house}</h5>
-      <p class="card-text">${studentObj[0].cardtxts}</p>
-      <a href="#" id="expel--${studentObj[0].name}" class="btn btn-primary">Expel Me</a>
+      <h5 class="card-title">${studentObj[0].name}</h5>
+      <p class="card-text">Radical pure blood supremacists who practiced the Dark Arts with reckless abandon and without regard to or fear of wizarding law.</p>
+      
     </div>
   </div>`
     
