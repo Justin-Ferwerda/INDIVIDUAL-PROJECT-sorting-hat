@@ -1,5 +1,7 @@
-import students from "../Data/Students.js"
-import cardsOnDom from "./cardsOnDom.js"
+import students from "../Data/Students.js";
+import cardsOnDom from "./cardsOnDom.js";
+import houseImage from "./houseImage.js";
+import cardText from "./cardText.js";
 
 const eventListeners = () => {
   //sortingHat    
@@ -21,13 +23,15 @@ const eventListeners = () => {
       } else {
         houseColor = 'yellow'
       }
+
   
       const newStudent = {
         student_id: students.length + 1,
         name: document.querySelector('#student-name').value,
         color: houseColor,
         house: randomHouse,
-        expelled: false
+        expelled: false,
+        
   
       };
   
