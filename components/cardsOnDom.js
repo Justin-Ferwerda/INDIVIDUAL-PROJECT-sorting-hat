@@ -12,7 +12,7 @@ const cardsOnDom = (array) => {
     <div class="card-body">
       <h5 class="card-title">${studentObj.name}  - ${studentObj.house}</h5>
       <p class="card-text">${studentObj.cardtxts}</p>
-      <a href="#" id="expel-btn" class="btn btn-primary">Expel Me</a>
+      <a href="#" id="expel--${studentObj.name}" class="btn btn-primary">Expel Me</a>
     </div>
   </div>`
     
