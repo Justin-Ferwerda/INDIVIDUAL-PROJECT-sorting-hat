@@ -64,9 +64,10 @@ const eventListeners = () => {
 
     document.querySelector('#card-container').addEventListener('click', (e) => {
       if (e.target.id) {
-        const [method, name] = e.target.id.split('--')
+        const [, name] = e.target.id.split('--')
 
         const index = students.findIndex(object => object.name === name)
+
 
         if (e.target.id.includes('expel')) {
           
