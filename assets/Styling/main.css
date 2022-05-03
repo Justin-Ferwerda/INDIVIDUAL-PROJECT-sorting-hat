@@ -3,6 +3,7 @@
   justify-content: center;
   font-family: HarryPotter;
   font-weight: bold;
+  color: white;
 }
 
 @font-face {
@@ -12,6 +13,8 @@
 
 body {
   display: flex;
+  flex-flow: column wrap;
+  background-color: black;
   background-image: url('/assets/images/imgbin_harry-potter-hogwarts-gryffindor-slytherin-house-png.png');
   justify-content: center;
   background-size: cover;
@@ -27,7 +30,14 @@ body {
 
 #house-container {
   display: flex;
-  justify-content: first baseline;
+  justify-content: start;
+  flex-direction: row;
+}
+
+#army-container {
+  display: flex;
+  justify-content: end;
+
 }
 
 #Slytherin {
@@ -68,4 +78,10 @@ a {
 
 img[alt="death-eater"] {
   background-color: black;
+}
+
+.card {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-family: HarryPotter;
 }
