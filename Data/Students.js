@@ -1,3 +1,4 @@
 const students = []
+const army = []
 
-export default students
+export {students, army}

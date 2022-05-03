@@ -4,8 +4,6 @@ import addButtons from "/components/addButtons.js"
 import eventListeners from "/components/eventListeners.js"
 
 
-//filterbuttons
-
 //expel student function
 
 

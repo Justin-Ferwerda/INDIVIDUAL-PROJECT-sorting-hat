@@ -27,7 +27,7 @@ body {
 
 #house-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: first baseline;
 }
 
 #Slytherin {
@@ -36,7 +36,7 @@ body {
   color: silver;
 }
 
-#hufflepuff {
+#Hufflepuff {
   font-family: HarryPotter;
   background-color: yellow;
   color: black;
@@ -58,4 +58,10 @@ body {
   font-family: HarryPotter;
   background-color: white;
   color: black;
+}
+
+#expel-btn {
+  font-family: HarryPotter;
+  background-color: black;
+  color: white;
 }
