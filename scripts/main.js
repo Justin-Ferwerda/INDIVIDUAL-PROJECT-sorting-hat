@@ -10,13 +10,13 @@ import cardsOnDom from "../components/cardsOnDom.js"
 //event listeners
 const eventListeners = () => {
 //sortingHat    
-  const form = document.querySelector("#enter-student-form");
+  const form = document.querySelector("form");
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const houses = ['Ravenclaw', 'Gryffindor', 'Slytherin', 'Hufflepuff'];
     
-    const randomHouse = houses[Math.floor(Math.random() * houses.length)];
+    let randomHouse = houses[Math.floor(Math.random() * houses.length)];
 
     let houseColor = ""
     if (randomHouse === houses[0]) {
@@ -30,8 +30,8 @@ const eventListeners = () => {
     }
 
     const newStudent = {
-      student_id: students.length,
-      name: document.querySelector('#name').value,
+      student_id: students.length + 1,
+      name: document.querySelector('#student-name').value,
       color: houseColor,
       house: randomHouse,
       expelled: false
@@ -41,7 +41,10 @@ const eventListeners = () => {
     students.push(newStudent);
     cardsOnDom(students);
     console.log(students);
+    
     form.reset();
+    
+    
 
   });
 
