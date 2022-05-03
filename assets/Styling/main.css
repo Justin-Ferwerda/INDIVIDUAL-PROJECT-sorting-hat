@@ -18,7 +18,14 @@ body {
 }
 
 .form-label {
-  background-color: blue;
+  background-color: black;
   color: white;
   padding: 5px;
+  font-family: HarryPotter;
+  font-size: x-large;
+}
+
+#card-container {
+  display: flex;
+  justify-content: flex-end;
 }

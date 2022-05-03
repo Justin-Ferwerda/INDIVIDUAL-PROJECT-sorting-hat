@@ -18,7 +18,9 @@ const cardsOnDom = (array) => {
   </div>`
    
   })
-renderToDom("card-container", domString)
+renderToDom("#card-container", domString)
+
+
 };
 
 export default cardsOnDom

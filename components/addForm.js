@@ -3,13 +3,13 @@ import renderToDom from "../Utils/renderToDom.js";
 
 // add form function
 const addForm = () => {
-  const domString = `<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Please enter your name!</label>
-  <input type="student-name" class="form-control" id="name" placeholder="First name Last name">
-  <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+  const domString = `<form>
+  <div class="mb-3">
+    <label for="first-name-last-name" class="form-label">Enter your name!</label>
+    <input type="name" class="form-control" id="student-name">
   </div>
-</div>`;
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>`;
   renderToDom('#enter-student-form', domString);
 }
 
