@@ -1,54 +1,9 @@
 import renderToDom from "../Utils/renderToDom.js"
 import addForm from "/components/addForm.js"
 import addButtons from "/components/addButtons.js"
-import students from "../Data/Students.js"
-import cardsOnDom from "../components/cardsOnDom.js"
-
-//cardsOnDom function
+import eventListeners from "/components/eventListeners.js"
 
 
-//event listeners
-const eventListeners = () => {
-//sortingHat    
-  const form = document.querySelector("form");
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const houses = ['Ravenclaw', 'Gryffindor', 'Slytherin', 'Hufflepuff'];
-    
-    let randomHouse = houses[Math.floor(Math.random() * houses.length)];
-
-    let houseColor = ""
-    if (randomHouse === houses[0]) {
-      houseColor = 'blue'
-    } else if (randomHouse === houses[1]) {
-      houseColor = 'gold'
-    } else if (randomHouse === houses[2]) {
-      houseColor = 'green'
-    } else {
-      houseColor = 'yellow'
-    }
-
-    const newStudent = {
-      student_id: students.length + 1,
-      name: document.querySelector('#student-name').value,
-      color: houseColor,
-      house: randomHouse,
-      expelled: false
-
-    };
-
-    students.push(newStudent);
-    cardsOnDom(students);
-    console.log(students);
-    
-    form.reset();
-    
-    
-
-  });
-
-}
 //filterbuttons
 
 //expel student function
@@ -59,5 +14,4 @@ const eventListeners = () => {
 
     addForm()
     addButtons()
-    cardsOnDom(students)
     eventListeners()

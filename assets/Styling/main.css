@@ -25,7 +25,37 @@ body {
   font-size: x-large;
 }
 
-#card-container {
+#house-container {
   display: flex;
   justify-content: flex-end;
+}
+
+#Slytherin {
+  font-family: HarryPotter;
+  background-color: green;
+  color: silver;
+}
+
+#hufflepuff {
+  font-family: HarryPotter;
+  background-color: yellow;
+  color: black;
+}
+
+#Gryffindor {
+  font-family: HarryPotter;
+  background-color: gold;
+  color: red
+}
+
+#Ravenclaw {
+  font-family: HarryPotter;
+  background-color: blue;
+  color: brown;
+}
+
+#select-all {
+  font-family: HarryPotter;
+  background-color: white;
+  color: black;
 }
