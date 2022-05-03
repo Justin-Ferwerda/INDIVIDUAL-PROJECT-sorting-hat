@@ -20,7 +20,7 @@ const houseImage = () => {
   
 
   return imageUrl;
-  
+    
 
 };
 

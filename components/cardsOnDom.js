@@ -4,10 +4,11 @@ import cardText from "./cardText.js";
 
 const cardsOnDom = (array) => {
   let domString = "";
-  let imgSource = houseImage()
-  let cardTexts = cardText()
+  
   array.forEach((studentObj) => {
 
+    let imgSource = houseImage()
+    let cardTexts = cardText()
     domString += `<div class="card" style="width: 18rem;">
     <img src="${imgSource}" class="card-img-top" alt="...">
     <div class="card-body">
@@ -16,10 +17,13 @@ const cardsOnDom = (array) => {
       <a href="#" class="btn btn-primary">Expel Me</a>
     </div>
   </div>`
+    
+  
    
   })
-renderToDom("#card-container", domString)
+  renderToDom("#card-container", domString)
 
+  
 
 };
 
