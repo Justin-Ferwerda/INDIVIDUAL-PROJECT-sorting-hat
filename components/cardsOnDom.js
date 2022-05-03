@@ -8,12 +8,13 @@ const cardsOnDom = (array) => {
   array.forEach((studentObj) => {
 
     let imgSource = houseImage()
-    let cardTexts = cardText()
+    let cardtxts = cardText()
+
     domString += `<div class="card" style="width: 18rem;">
     <img src="${imgSource}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${studentObj.name}</h5>
-      <p class="card-text">${cardTexts}</p>
+      <p class="card-text">${cardtxts}</p>
       <a href="#" class="btn btn-primary">Expel Me</a>
     </div>
   </div>`
