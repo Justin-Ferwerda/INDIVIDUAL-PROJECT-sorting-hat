@@ -1,21 +1,20 @@
-import students from "../Data/Students.js"
 
 
 
 
-const houseImage = () => {
+const houseImage = (obj) => {
   let imageUrl = '';
-  students.forEach((studentObj) => {
-    if (studentObj.house === 'Ravenclaw') {
+  
+    if (obj.house === 'Ravenclaw') {
       imageUrl = 'assets/images/RavenclawCrest.webp'
-    } else if (studentObj.house === 'Gryffindor') {
+    } else if (obj.house === 'Gryffindor') {
       imageUrl = 'assets/images/Gryffindorimg.webp'
-    } else if (studentObj.house === 'Slytherin') {
+    } else if (obj.house === 'Slytherin') {
       imageUrl = 'assets/images/Slytherinimg.webp'
     } else {
       imageUrl = 'assets/images/Hufflepuffimg.webp'
     }
-  })
+  
 
   
 

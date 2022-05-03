@@ -1,5 +1,8 @@
-import students from "../Data/Students.js";
+import { students } from "../Data/Students.js";
 import cardsOnDom from "./cardsOnDom.js";
+import houseImage from "./houseImage.js";
+import cardText from "./cardText.js";
+
 
 const eventListeners = () => {
   //sortingHat    
@@ -29,9 +32,12 @@ const eventListeners = () => {
         color: houseColor,
         house: randomHouse,
         expelled: false,
-        
-  
+        imgSource: '',
+        cardtxts: ''
+      
       };
+        newStudent.imgSource = houseImage(newStudent),
+        newStudent.cardtxts = cardText(newStudent)
   
       students.push(newStudent);
       cardsOnDom(students);
@@ -54,6 +60,15 @@ const eventListeners = () => {
 
 
     });
+
+    document.querySelector('#card-container').addEventListener('click', (e) => {
+      if (e.target.id) {
+        
+
+      }
+
+
+    })
     
   
   }
