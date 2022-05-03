@@ -1,7 +1,8 @@
-import { students } from "../Data/Students.js";
+import { students, army } from "../Data/Students.js";
 import cardsOnDom from "./cardsOnDom.js";
 import houseImage from "./houseImage.js";
 import cardText from "./cardText.js";
+import armyCardsOnDom from "./armyCardsOnDom.js"
 
 
 const eventListeners = () => {
@@ -63,7 +64,19 @@ const eventListeners = () => {
 
     document.querySelector('#card-container').addEventListener('click', (e) => {
       if (e.target.id) {
-        
+        const [method, name] = e.target.id.split('--')
+
+        const index = students.findIndex(object => object.name === name)
+
+        if (e.target.id.includes('expel')) {
+          
+          army.push(students.splice(index, 1));
+          cardsOnDom(students)
+          armyCardsOnDom(army)
+          
+        }
+        console.log(students)
+        console.log(army)
 
       }
 
