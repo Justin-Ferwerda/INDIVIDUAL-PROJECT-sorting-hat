@@ -7,9 +7,9 @@ const houseImage = () => {
   let imageUrl = '';
   students.forEach((studentObj) => {
     if (studentObj.house === 'Ravenclaw') {
-      imageUrL = 'assets/images/RavenclawCrest.webp'
+      imageUrl = 'assets/images/RavenclawCrest.webp'
     } else if (studentObj.house === 'Gryffindor') {
-      imageUrL = 'assets/images/Gryffindorimg.png'
+      imageUrl = 'assets/images/Gryffindorimg.webp'
     } else if (studentObj.house === 'Slytherin') {
       imageUrl = 'assets/images/Slytherinimg.webp'
     } else {
