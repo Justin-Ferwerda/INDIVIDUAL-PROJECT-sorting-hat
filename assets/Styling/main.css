@@ -84,4 +84,12 @@ img[alt="death-eater"] {
   margin-bottom: 10px;
   margin-left: 10px;
   font-family: HarryPotter;
+  font-size: larger;
+}
+
+#submit-btn {
+  font-family: HarryPotter;
+  background-color: white;
+  color: green;
+  font-size: x-large;
 }
