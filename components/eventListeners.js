@@ -1,7 +1,5 @@
 import students from "../Data/Students.js";
 import cardsOnDom from "./cardsOnDom.js";
-import houseImage from "./houseImage.js";
-import cardText from "./cardText.js";
 
 const eventListeners = () => {
   //sortingHat    
@@ -45,11 +43,11 @@ const eventListeners = () => {
   
     });
 
-    document.querySelector("filter-btns").addEventListener('click', (e) => {
+    document.querySelector("#filter-btns").addEventListener('click', (e) => {
       if (e.target.id === 'select-all') {
         cardsOnDom(students)
       } else if (e.target.id) {
-        const studentFilter = students.filter(student => student.house.tolowercase() === e.target.id)
+        const studentFilter = students.filter(student => student.house === e.target.id)
         cardsOnDom(studentFilter)
       }
 
