@@ -73,7 +73,7 @@ const eventListeners = () => {
 
         if (e.target.id.includes('expel')) {
           
-          army.push(students.splice(index, 1));
+          army.push(...students.splice(index, 1));
           cardsOnDom(students)
           armyCardsOnDom(army)
           
