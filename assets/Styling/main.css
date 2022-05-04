@@ -37,7 +37,7 @@ body {
 
 #army-container {
   display: flex;
-  justify-content: end;
+  flex-flow: row wrap;
 
 }
 
