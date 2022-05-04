@@ -4,9 +4,10 @@ import houseImage from "./houseImage.js";
 import cardText from "./cardText.js";
 import armyCardsOnDom from "./armyCardsOnDom.js"
 
-
 const eventListeners = () => {
   //sortingHat    
+  
+
     const form = document.querySelector("form");
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -56,6 +57,7 @@ const eventListeners = () => {
       } else if (e.target.id) {
         const studentFilter = students.filter(student => student.house === e.target.id)
         cardsOnDom(studentFilter)
+        
       }
 
 
