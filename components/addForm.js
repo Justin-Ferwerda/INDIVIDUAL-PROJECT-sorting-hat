@@ -6,7 +6,7 @@ const addForm = () => {
   const domString = `<form>
   <div class="mb-3">
     <label for="first-name-last-name" class="form-label">Enter your name!</label>
-    <input type="name" class="form-control" id="student-name">
+    <input type="name" class="form-control" id="student-name" required>
   </div>
   <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
 </form>`;

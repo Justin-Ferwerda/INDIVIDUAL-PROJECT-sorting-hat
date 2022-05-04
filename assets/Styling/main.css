@@ -13,7 +13,7 @@
 
 body {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   background-color: black;
   background-image: url('/assets/images/imgbin_harry-potter-hogwarts-gryffindor-slytherin-house-png.png');
   justify-content: center;
@@ -30,8 +30,9 @@ body {
 
 #house-container {
   display: flex;
-  justify-content: start;
-  flex-direction: row;
+  flex-flow: row wrap;
+  
+  
 }
 
 #army-container {
