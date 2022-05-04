@@ -14,3 +14,9 @@
 ###Screenshot of Home Page
 
 ![alt text](assets/images/Screen%20Shot%202022-05-03%20at%208.06.13%20PM.png)
+
+![alt text](assets/images/Screen%20Shot%202022-05-03%20at%208.12.29%20PM.png)
+
+![alt text](assets/images/Screen%20Shot%202022-05-03%20at%208.13.38%20PM.png)
+
+![alt text](assets/images/2022-05-03%2020.19.22.gif)
